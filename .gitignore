@@ -1,0 +1,35 @@
+# === Node ===
+node_modules/
+npm-debug.log*
+.env
+.env.*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === System Files ===
+.DS_Store
+Thumbs.db
+.cache/
+.bash_history
+.bash_sessions/
+
+# === Docker (if building locally) ===
+*.log
+*.pid
+
+# === Temporary/Backup Files ===
+*.bak
+*.tmp
+*~
+# e.g., setup.sh~ or node.sh.bak
+
+# === Dotfiles Backups ===
+dotfiles-backup/
