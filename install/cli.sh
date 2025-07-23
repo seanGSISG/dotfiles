@@ -17,6 +17,11 @@ sudo apt install -y \
   fd-find \
   graphviz
 
+# Add to install/cli.sh
+echo "🐍 Installing Python tools..."
+pip install --upgrade pip
+pip install black isort ruff
+
 # Link fd
 if ! command -v fd &> /dev/null; then
   mkdir -p ~/.local/bin
