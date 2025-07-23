@@ -5,6 +5,9 @@ echo "🧰 Running full dotfiles setup..."
 # Update system
 sudo apt update && sudo apt upgrade -y
 
+# Run backup script
+./install/backup.sh
+
 # Link dotfiles
 echo "🔗 Linking dotfiles..."
 ln -sf "$PWD/.bashrc" ~/.bashrc
@@ -15,5 +18,7 @@ ln -sf "$PWD/.profile" ~/.profile
 ./install/cli.sh
 ./install/git.sh
 ./install/node.sh
+./install/ssh.sh
+./install/theme.sh
 
 echo "✅ Done! Restart terminal or run: source ~/.bashrc"
