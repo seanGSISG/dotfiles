@@ -1,0 +1,72 @@
+# DGX-Spark Ghostty Configuration
+# Enhanced terminal settings for AI development workflows
+
+# --- Shell ---
+command = /usr/bin/zsh
+
+# --- Appearance & Theme ---
+theme = GitHub Dark
+background-opacity = 0.9
+background-blur-radius = 20
+window-padding-x = 10
+window-padding-y = 10
+window-decoration = true
+
+# --- Font Settings ---
+# Note: JetBrainsMono Nerd Font provides excellent icon support for lsd/p10k
+font-family = "JetBrainsMono Nerd Font"
+font-size = 12
+font-feature = -calt, -liga
+
+# --- Cursor ---
+cursor-style = block
+cursor-style-blink = true
+
+# --- Window Behavior ---
+confirm-close-surface = false
+window-inherit-working-directory = true
+focus-follows-mouse = true
+
+# --- Terminal Features ---
+copy-on-select = true
+click-repeat-interval = 200
+
+# --- Scrollback ---
+scrollback-limit = 50000
+
+# --- Keybindings ---
+# Tab management
+keybind = ctrl+shift+t=new_tab
+keybind = ctrl+shift+w=close_surface
+keybind = ctrl+tab=next_tab
+keybind = ctrl+shift+tab=previous_tab
+keybind = ctrl+1=goto_tab:1
+keybind = ctrl+2=goto_tab:2
+keybind = ctrl+3=goto_tab:3
+keybind = ctrl+4=goto_tab:4
+keybind = ctrl+5=goto_tab:5
+
+# Split panes
+keybind = ctrl+shift+d=new_split:right
+keybind = ctrl+shift+e=new_split:down
+keybind = ctrl+shift+h=goto_split:left
+keybind = ctrl+shift+l=goto_split:right
+keybind = ctrl+shift+j=goto_split:bottom
+keybind = ctrl+shift+k=goto_split:top
+
+# Font size adjustments
+keybind = ctrl+plus=increase_font_size:1
+keybind = ctrl+minus=decrease_font_size:1
+keybind = ctrl+0=reset_font_size
+
+# Scrollback navigation
+keybind = ctrl+shift+u=scroll_page_up
+keybind = ctrl+shift+d=scroll_page_down
+keybind = ctrl+shift+home=scroll_to_top
+keybind = ctrl+shift+end=scroll_to_bottom
+
+# Quick actions
+keybind = ctrl+shift+c=copy_to_clipboard
+keybind = ctrl+shift+v=paste_from_clipboard
+keybind = ctrl+shift+f=toggle_fullscreen
+keybind = shift+enter=text:\x1b\r
